@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js history"><head> <title> - My site</title> <meta name="description" content="Open source question and answer forum written in Python and Django"> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=EDGE"> <meta name="keywords" content=",Askbot,forum,community"> <meta name="referrer" content="always"> <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> <link rel="shortcut icon" href="http://10.20.8.225:8077/static/default/media/images/favicon.gif?v=1"> <link rel="alternate" type="application/rss+xml" href="http://localhost/feeds/rss/"> <link rel="stylesheet" href="LDAP_files/3712b5676e81.css" type="text/css"> <link href="LDAP_files/css_002.css" rel="stylesheet" type="text/css"> <link href="LDAP_files/css.css" rel="stylesheet" type="text/css"> <script type="text/javascript" src="LDAP_files/modernizr.js"></script> <script type="text/javascript">
+    var askbot = {};
+    askbot['data'] = {};
+    askbot['data']['userIsAuthenticated'] = true;
+    askbot['data']['languageCode'] = 'en';
+    
+        askbot['data']['userId'] = 1;
+        askbot['data']['userName'] = 'admin';
+        askbot['data']['userEmail'] = 'sangeeta.bose_ext@lnttechservices.com';
+        askbot['data']['userProfileUrl'] = '/users/1/admin/';
+        askbot['data']['userIsAdminOrMod'] = true;
+        askbot['data']['userIsAdmin'] = true;
+        askbot['data']['userReputation'] = 1;
+        askbot['data']['userIsReadOnly'] = false;
+    
+    askbot['urls'] = {};
+    askbot['settings'] = {};
+    askbot['messages'] = {};
+    
+</script> <script type="text/javascript" src="LDAP_files/a"></script> </head> <body class="one-col settings lang-en admin"> <div class="notify" style="display:none"> <div class="content-wrapper"> <a id="closeNotify" onclick="notify.close(true)"></a> </div> </div> <div> <p>
+            You are seeing this message because you are using Django runserver
+            and DEBUG_MODE is False. Runserver should not be used in production.
+        </p> <p>
+            To serve static media in production - please run:
+            </p><pre>python manage.py collectstatic</pre> <p></p> <p>
+            If you do not see page styling - set DEBUG_MODE = True or 
+            use --insecure flag with the runserver command.
+        </p> </div> <!-- template header.html --> <div id="header" class="without-logo"> <div class="content-wrapper"> <div id="userToolsNav"> <a href="http://10.20.8.225:8077/users/1/admin/">admin</a> <span class="user-info"> <a id="ab-responses" href="http://10.20.8.225:8077/users/1/admin/?sort=inbox&amp;section=forum"> <img alt="responses for admin" src="LDAP_files/mail-envelope-full.png" title="you have 1 new response"> </a> <a id="ab-responses" href="http://10.20.8.225:8077/moderation-queue/"> </a>
+    (<a class="user-micro-info reputation" href="http://10.20.8.225:8077/users/1/admin/?sort=reputation" data-fetch-data-url="/s/get-perms-data/" data-url="/s/get-perms-data/">karma: 1</a>)</span> <a href="http://10.20.8.225:8077/account/signout/?next=/account/logout/">sign out</a> <a class="settings" href="http://10.20.8.225:8077/settings/">settings</a> <a class="widgets" href="http://10.20.8.225:8077/s/widgets/">widgets</a> <a class="help" href="http://10.20.8.225:8077/help/" title="help">help</a> </div> <div id="metaNav"> <a id="navTags" href="http://10.20.8.225:8077/tags/">tags</a> <a id="navUsers" href="http://10.20.8.225:8077/users/">users</a> <a id="navBadges" href="http://10.20.8.225:8077/badges/">badges</a> </div> <div class="clean"></div> </div> </div> <!-- end template header.html --> <!-- template secondary_header.html --> <div id="secondaryHeader"> <div class="content-wrapper"> <form action="/questions/" id="searchForm" class="scopes-True-True-True" method="get"> <table width="100%"> <tbody><tr> <td width="1"><a id="homeButton" href="http://10.20.8.225:8077/questions/"><i class="fa fa-home"></i></a></td> <td width="1"><div id="scopeNav"> <a class="scope-selector " href="http://10.20.8.225:8077/questions/scope:all/sort:activity-desc/page:1/">ALL</a> <a class="scope-selector " href="http://10.20.8.225:8077/questions/scope:unanswered/sort:answers-asc/page:1/">UNANSWERED</a> <a class="scope-selector " href="http://10.20.8.225:8077/questions/scope:followed/sort:activity-desc/page:1/">FOLLOWED</a> </div></td> <td class="search-bar" width="*"> <div id="searchBar" class="search-bar"><input class="searchInput" autocomplete="off" name="query" placeholder="Search or ask your question" id="keywords" type="text"><input value="" name="search" class="searchBtn" type="submit"><input value="X" name="reset_query" class="cancelSearchBtn" style="display: none;" type="button"></div> </td> <td width="1"> <a id="askButton" class="button" href="http://10.20.8.225:8077/questions/ask/">
+            Ask Your Question
+        </a> </td> </tr> </tbody></table> </form> </div> </div> <div class="content-wrapper"> <div id="ContentFull"> <h1 class="section-title">
+    Settings → External Services → LDAP login configuration
+</h1> <div class="settings-main"> <form method="post" enctype="multipart/form-data"><input name="csrfmiddlewaretoken" value="lrHXFP1vuHcefWtTiM5NQYEfzFCfYIbk" type="hidden"> <table class="settings" summary="Settings included in LDAP login configuration."> <tbody><tr> <td class="setting-label"> <label for="LDAP_SETTINGS__USE_LDAP_FOR_PASSWORD_LOGIN__en">Use LDAP authentication for the password login</label> <p class="help">Default value: False</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__USE_LDAP_FOR_PASSWORD_LOGIN__en" name="LDAP_SETTINGS__USE_LDAP_FOR_PASSWORD_LOGIN__en" type="checkbox"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_AUTOCREATE_USERS__en">Automatically create user accounts when possible</label> <p class="help">Potentially
+ reduces number of steps in the registration process but can expose 
+personal information, e.g. when LDAP login name is the same as email 
+address or real name.</p> <p class="help">Default value: False</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_AUTOCREATE_USERS__en" name="LDAP_SETTINGS__LDAP_AUTOCREATE_USERS__en" type="checkbox"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_PROTOCOL_VERSION__en">LDAP protocol version</label> <p class="help">Note that Version 2 protocol is not secure!!! Do not use it on unprotected network.</p> <p class="help">Default value: 3</p> </td> <td class="setting-input"><select id="id_LDAP_SETTINGS__LDAP_PROTOCOL_VERSION__en" name="LDAP_SETTINGS__LDAP_PROTOCOL_VERSION__en"> <option value="3" selected="selected">Version 3</option> <option value="2">Version 2 (insecure and deprecated)!!!</option> </select></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_URL__en">LDAP URL</label> <p class="help">Default value: ldap://<host>:<port></port></host></p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_URL__en" name="LDAP_SETTINGS__LDAP_URL__en" value="ldap://&lt;host&gt;:&lt;port&gt;" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_ENCODING__en">LDAP encoding</label> <p class="help">This value in almost all cases is "utf-8". Change it if yours is different. This field is required</p> <p class="help">Default value: utf-8</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_ENCODING__en" name="LDAP_SETTINGS__LDAP_ENCODING__en" value="utf-8" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_BASE_DN__en">Base DN (distinguished name)</label> <p class="help">Usually
+ base DN mirrors domain name of your organization, e.g. 
+"dn=example,dn=com" when your site url is "example.com". This value is 
+the "root" address of your LDAP directory.</p> <p class="help">Default value: </p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_BASE_DN__en" name="LDAP_SETTINGS__LDAP_BASE_DN__en" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_USER_FILTER_TEMPLATE__en">User search filter template</label> <p class="help">Python
+ string format template, must have two string placeholders, which should
+ be left in the intact format. First placeholder will be used for the 
+user id field name, and the second - for the user id value. The template
+ can be extended to match schema of your LDAP directory.</p> <p class="help">Default value: (%s=%s)</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_USER_FILTER_TEMPLATE__en" name="LDAP_SETTINGS__LDAP_USER_FILTER_TEMPLATE__en" value="(%s=%s)" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_LOGIN_NAME_FIELD__en">UserID/login field</label> <p class="help">This field is required. For Microsoft Active Directory this value usually is "sAMAccountName".</p> <p class="help">Default value: uid</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_LOGIN_NAME_FIELD__en" name="LDAP_SETTINGS__LDAP_LOGIN_NAME_FIELD__en" value="uid" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD__en">"Common Name" field</label> <p class="help">Common name is a formal or informal name of a person, can be blank. Use it only if surname and given names are not available.</p> <p class="help">Default value: cn</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD__en" name="LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD__en" value="cn" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD_FORMAT__en">"Common Name" field format</label> <p class="help">Use this only if "Common Name" field is used.</p> <p class="help">Default value: first,last</p> </td> <td class="setting-input"><select id="id_LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD_FORMAT__en" name="LDAP_SETTINGS__LDAP_COMMON_NAME_FIELD_FORMAT__en"> <option value="first,last" selected="selected">First name, Last name</option> <option value="last,first">Last name, First name</option> </select></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_GIVEN_NAME_FIELD__en">Given (First) name</label> <p class="help">This field can be blank</p> <p class="help">Default value: givenName</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_GIVEN_NAME_FIELD__en" name="LDAP_SETTINGS__LDAP_GIVEN_NAME_FIELD__en" value="givenName" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_SURNAME_FIELD__en">Surname (last) name</label> <p class="help">This field can be blank</p> <p class="help">Default value: sn</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_SURNAME_FIELD__en" name="LDAP_SETTINGS__LDAP_SURNAME_FIELD__en" value="sn" type="text"></td> </tr> <tr> <td class="setting-label"> <label for="LDAP_SETTINGS__LDAP_EMAIL_FIELD__en">LDAP Server EMAIL field name</label> <p class="help">This field is required</p> <p class="help">Default value: mail</p> </td> <td class="setting-input"><input id="id_LDAP_SETTINGS__LDAP_EMAIL_FIELD__en" name="LDAP_SETTINGS__LDAP_EMAIL_FIELD__en" value="mail" type="text"></td> </tr> </tbody></table> <input value="Save" class="default" type="submit"> </form> </div> <div class="settings-nav"> <h2>Reputation, Badges, Votes &amp; Flags</h2> <ul> <li><a href="http://10.20.8.225:8077/settings/MIN_REP/">Karma thresholds</a></li> <li><a href="http://10.20.8.225:8077/settings/VOTE_RULES/">Vote and flag limits</a></li> <li><a href="http://10.20.8.225:8077/settings/REP_CHANGES/">Karma loss and gain rules</a></li> <li><a href="http://10.20.8.225:8077/settings/KARMA_AND_BADGE_VISIBILITY/">Karma &amp; Badge visibility</a></li> <li><a href="http://10.20.8.225:8077/settings/BADGES/">Badge settings</a></li> <li><a href="http://10.20.8.225:8077/settings/SITE_MODES/">Bootstrap mode</a></li> </ul> <h2>Login, Users &amp; Communication</h2> <ul> <li><a href="http://10.20.8.225:8077/settings/EMAIL/">Email and email alert settings</a></li> <li><a href="http://10.20.8.225:8077/settings/EMAIL_TEXT/">Email template phrases</a></li> <li><a href="http://10.20.8.225:8077/settings/USER_SETTINGS/">User settings</a></li> <li><a href="http://10.20.8.225:8077/settings/GROUP_SETTINGS/">Group settings</a></li> <li><a href="http://10.20.8.225:8077/settings/FEEDBACK/">Feedback settings</a></li> <li><a href="http://10.20.8.225:8077/settings/LOGIN_PROVIDERS/">Login provider settings</a></li> <li><a href="http://10.20.8.225:8077/settings/ACCESS_CONTROL/">Access control settings</a></li> </ul> <h2>Data rules &amp; Formatting</h2> <ul> <li><a href="http://10.20.8.225:8077/settings/FORUM_DATA_RULES/">Data entry and display rules</a></li> <li><a href="http://10.20.8.225:8077/settings/MODERATION/">Content moderation</a></li> <li><a href="http://10.20.8.225:8077/settings/QUESTION_LISTS/">Listings of questions</a></li> <li><a href="http://10.20.8.225:8077/settings/MARKUP/">Markup in posts</a></li> </ul> <h2>External Services</h2> <ul> <li><a href="http://10.20.8.225:8077/settings/EXTERNAL_KEYS/">Keys for external services</a></li> <li class="on">LDAP login configuration</li> <li><a href="http://10.20.8.225:8077/settings/SPAM_AND_MODERATION/">Akismet spam protection</a></li> <li><a href="http://10.20.8.225:8077/settings/SOCIAL_SHARING/">Content sharing</a></li> </ul> <h2>Static Content, URLS &amp; UI</h2> <ul> <li><a href="http://10.20.8.225:8077/settings/FLATPAGES/">Messages and pages - about, privacy policy, etc.</a></li> <li><a href="http://10.20.8.225:8077/settings/QA_SITE_SETTINGS/">URLS, keywords &amp; greetings</a></li> <li><a href="http://10.20.8.225:8077/settings/LICENSE_SETTINGS/">Content License</a></li> <li><a href="http://10.20.8.225:8077/settings/GENERAL_SKIN_SETTINGS/">Skin, logos and HTML  parts</a></li> <li><a href="http://10.20.8.225:8077/settings/SIDEBAR_MAIN/">Main page sidebar</a></li> <li><a href="http://10.20.8.225:8077/settings/SIDEBAR_QUESTION/">Question page banners and sidebar</a></li> <li><a href="http://10.20.8.225:8077/settings/SIDEBAR_PROFILE/">User profile sidebar</a></li> <li><a href="http://10.20.8.225:8077/settings/LEADING_SIDEBAR/">Common left sidebar</a></li> <li><a href="http://10.20.8.225:8077/settings/WORDS/">Site terms vocabulary</a></li> </ul> </div> <div class="clearfix"></div> </div> </div> <!-- template footer.html --> <div id="ground"> <div class="content-wrapper"> <div class="copyright"> <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode"> <img class="license-logo" src="LDAP_files/cc-by-sa.png" title="cc-by-sa" alt="cc-by-sa"> </a>
+                
+                Copyright Askbot, 2010-2011. Content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution Share Alike 3.0</a> license.
+
+            </div> <div class="footer-links"> <a href="http://10.20.8.225:8077/about/">about</a><span class="link-separator"> |</span> <a href="http://10.20.8.225:8077/faq/">faq</a><span class="link-separator"> |</span> <a href="http://10.20.8.225:8077/help/" title="help">help</a> <span class="link-separator"> |</span> <a href="http://10.20.8.225:8077/privacy/">privacy policy</a><span class="link-separator"> |</span> <a href="http://10.20.8.225:8077/terms/">terms of service</a> <span class="link-separator"> |</span> <a href="http://10.20.8.225:8077/feedback/?next=/settings/LDAP_SETTINGS/">
+                give feedback
+            </a> </div> <div class="powered-link"> <a href="http://askbot.com/" target="_blank">
+                Powered by Askbot version 0.10.2
+            </a> </div> <div class="clean"></div> </div> </div> <!-- end template footer.html --> <div id="no-javascript"> <noscript class="noscript" style="padding: 0px; background-color: transparent;">
+        Please note: Askbot requires javascript to work properly, please enable javascript in your browser, <a href="https://www.google.com/support/bin/answer.py?answer=23852">here is how</a> </noscript> <script type="text/javascript">
+        //IE fix to hide the red margin
+        var noscript = document.getElementsByTagName('noscript')[0];
+        noscript.style.padding = '0px';
+        noscript.style.backgroundColor = 'transparent';
+    </script> </div> <script type="text/javascript">
+    askbot['urls']['mark_read_message'] = '/s/messages/markread/';
+    askbot['urls']['get_tags_by_wildcard'] = '/s/get-tags-by-wildcard/';
+    askbot['urls']['get_tag_list'] = '/s/get-tag-list/';
+    askbot['urls']['follow_user'] = '/followit/follow/user/{{userId}}/';
+    askbot['urls']['unfollow_user'] = '/followit/unfollow/user/{{userId}}/';
+    askbot['urls']['user_signin'] = '/account/signin/';
+    askbot['urls']['getEditor'] = '/s/get-editor/';
+    
+    askbot['urls']['apiGetQuestions'] = '/s/api/get_questions/';
+    askbot['urls']['ask'] = '/questions/ask/';
+	askbot['urls']['questions'] = '/questions/';
+    askbot['settings']['groupsEnabled'] = false;
+    askbot['settings']['static_url'] = '/static/';
+    askbot['settings']['minSearchWordLength'] = 4;
+    askbot['settings']['mathjaxEnabled'] = false;
+    askbot['settings']['sharingSuffixText'] = '';
+    askbot['settings']['errorPlacement'] = 'after-label';
+    askbot['data']['maxCommentLength'] = 300;
+    askbot['settings']['editorType'] = 'markdown';
+    
+    askbot['settings']['commentsEditorType'] = 'plain\u002Dtext';
+    askbot['messages']['askYourQuestion'] = 'Ask Your Question';
+    askbot['messages']['acceptOwnAnswer'] = 'accept or unaccept your own answer';
+    askbot['messages']['followQuestions'] = 'follow questions';
+    
+        askbot['settings']['allowedUploadFileTypes'] = [
+            "jpg", "jpeg", "gif", "bmp", "png", "tiff"
+        ];
+    
+    askbot['data']['haveFlashNotifications'] = false;
+    askbot['data']['activeTab'] = '';
+    askbot['settings']['csrfCookieName'] = 'csrftoken';
+    
+        askbot['data']['searchUrl'] = '';
+    
+</script> <form name="scroll-pos-form"><input id="scroll-mem" style="display: none;" type="text"></form> <script type="text/javascript" src="LDAP_files/aac942251518.js"></script> <script type="text/javascript">
+    /*<![CDATA[*/
+    $('.mceStatusbar').remove();//a hack to remove the tinyMCE status bar
+    $(document).ready(function(){
+        // focus input on the search bar endcomment
+        var activeTab = askbot['data']['activeTab'];
+        if (inArray(activeTab, ['users', 'questions', 'tags', 'badges'])) {
+            var searchInput = $('#keywords');
+        } else if (activeTab === 'ask') {
+            var searchInput = $('#id_title');
+        } else {
+            var searchInput = undefined;
+            animateHashes();
+        }
+
+        var wasScrolled = $('#scroll-mem').val();
+        if (searchInput && !wasScrolled) {
+            searchInput.focus();
+            putCursorAtEnd(searchInput);
+        }
+
+        var haveFullTextSearchTab = inArray(activeTab, ['questions', 'badges', 'ask']);
+        var haveUserProfilePage = $('body').hasClass('user-profile-page');
+        if ((haveUserProfilePage || haveFullTextSearchTab) && searchInput && searchInput.length) {
+            var search = new FullTextSearch();
+            askbot['controllers'] = askbot['controllers'] || {};
+            askbot['controllers']['fullTextSearch'] = search;
+            search.setSearchUrl(askbot['data']['searchUrl']);
+            if (activeTab === 'ask') {
+                search.setAskButtonEnabled(false);
+            }
+            search.decorate(searchInput);
+        } else if (activeTab === 'tags') {
+            var search = new TagSearch();
+            search.decorate(searchInput);
+        }
+
+        if (askbot['data']['userIsAdminOrMod']) {
+            $('body').addClass('admin');
+        }
+        if (askbot['settings']['groupsEnabled']) {
+            askbot['urls']['add_group'] = "/s/add-group/";
+            var group_dropdown = new GroupDropdown();
+            $('.groups-dropdown').append(group_dropdown.getElement());
+        }
+        var userRep = $('#userToolsNav .reputation');
+        if (userRep.length) {
+            var showPermsTrigger = new ShowPermsTrigger();
+            showPermsTrigger.decorate(userRep);
+        }
+    });
+    if (askbot['data']['haveFlashNotifications']) {
+        $('#validate_email_alert').click(function(){notify.close(true)})
+        notify.show();
+    }
+
+    var langNav = $('.lang-nav');
+    if (langNav.length) {
+        var nav = new LangNav();
+        nav.decorate(langNav);
+    }
+    /*]]>*/
+</script> <div class="js-templates" style="display: none;"></div> <script type="text/javascript">
+            for (url_name in askbot['urls']){
+                askbot['urls'][url_name] = cleanUrl(askbot['urls'][url_name]);
+            }
+        </script>  <div class="hovercard" style="display: none;"></div></body></html>

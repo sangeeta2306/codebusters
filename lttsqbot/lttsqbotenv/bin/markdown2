@@ -1,0 +1,4 @@
+#!/home/pcadmin/codebusters/lttsqbot/lttsqbotenv/bin/python
+# EASY-INSTALL-SCRIPT: 'markdown2==2.3.1','markdown2'
+__requires__ = 'markdown2==2.3.1'
+__import__('pkg_resources').run_script('markdown2==2.3.1', 'markdown2')
